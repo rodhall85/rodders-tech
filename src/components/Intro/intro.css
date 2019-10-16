@@ -1,0 +1,15 @@
+article {
+  margin: auto;
+  width: 50%;
+}
+
+img {
+  width: 30%;
+  height: 30%;
+}
+
+.intro {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+}
