@@ -11,7 +11,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:js": "eslint src --ext .jsx,.js -f table --fix",
+    "lint:css": "stylelint src/\"**/*.scss\"",
+    "lint": "npm run lint:js && npm run lint:css",
+    "deploy": "aws s3 sync build/ s3://rodders.tech"
   },
   "eslintConfig": {
     "extends": "react-app"
